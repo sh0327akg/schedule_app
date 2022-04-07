@@ -1,0 +1,29 @@
+<h3>スケジュール詳細</h3>
+<table>
+  <tr>
+    <th>タイトル</th>
+    <td><%= @post.title %></td>
+  </tr>
+  <tr>
+    <th>開始日</th>
+    <td><%= @post.start_date %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @post.end_date %></td>
+  </tr>
+  <tr>
+    <th>終日</th>
+    <% if post.all_day == true %>
+      <td>◯</td>
+    <% else %>
+      <td></td>
+    <% end %>
+  </tr>
+</table>
+
+<div>
+  <ul>
+    <li><%= link_to "ユーザー情報一覧にもどる", root_path %></li>
+  </ul>
+</div>
